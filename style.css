@@ -1,0 +1,133 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 90px;
+}
+
+.logotxt {
+  padding: 0 20px;
+  margin-right: auto;
+}
+
+.top-links {
+  display: flex;
+  gap: 20px;
+}
+
+.top-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 82);
+  font-weight: bold;
+}
+
+.mazar-logo img {
+  height: 90px;
+}
+
+/* NAVIGATION BAR */
+.navbar { background: navy; padding: 10px; }
+.navbar ul { display: flex; justify-content: center; list-style: none; }
+.navbar a { color: white; text-decoration: none; padding: 10px 15px; display: block; }
+.navbar a:hover { background: #004080; }
+
+/* Checkbox for mobile */
+.menu-icon { display: none; font-size: 24px; color: white; cursor: pointer; }
+#menu-toggle { display: none; }
+@media (max-width: 768px) {
+  .nav-links { display: none; flex-direction: column; }
+  #menu-toggle:checked + .menu-icon + .nav-links { display: flex; }
+  .menu-icon { display: block; }
+}
+
+/* CENTER */
+.center { display: grid; grid-template-columns: 1fr 1fr; }
+.center img { width: 100%; height: 95%; }
+.caption { background: navy; color: white; padding: 15px; position: absolute; top : 950px; left: 20px; }
+.caption a { color: yellow; text-decoration: none; }
+
+/* DG MESSAGE */
+.dg-message {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 900px;
+}
+
+.dg-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dg-profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.dg-info h2 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #00174d; 
+  margin: 5px 0;
+}
+
+.dg-info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.dg-info p {
+  font-size: 14px;
+  margin: 0;
+  color: #444;
+}
+
+.dg-quote {
+  background: #0a1f56;
+  color: white;
+  padding: 20px;
+  border: 3px dashed goldenrod;
+  margin: 20px 0;
+}
+
+.dg-quote p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.dg-btn a {
+  display: inline-block;
+  background: #0a1f56;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 2px 3px 6px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+
+.dg-btn a:hover {
+  background: goldenrod;
+  color: #0a1f56;
+}
+
+/* ON CAMPUS */
+.on-campus { padding: 40px; text-align: center; }
+.on-campus h2 { color: navy; margin-bottom: 10px; }
+
+/* FOOTER */
+.footer { background: navy; color: white; text-align: center; padding: 15px; }
